@@ -3,27 +3,27 @@ import { FaYoutube, FaInstagram, FaTwitter, FaRegCopyright } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <div className='bg-custom-blue py-5 px-4'>
-      <div className='border-t border-gray-200 py-4'>
-        <div className='flex flex-col md:flex-row items-center justify-between'>
-          <div className='md:text-right md:order-2 flex gap-4 md:mt-0 mt-4 cursor-pointer'>
-            <FaYoutube className='text-white' size={28} />
-            <FaInstagram className='text-white' size={28} />
-            <FaTwitter className='text-white' size={28} />
+    <div className="bg-custom-blue py-6 px-4">
+      <div className="border-t border-gray-200 py-4 container mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          
+          {/* Social Icons */}
+          <div className="flex gap-4 md:mt-0 mt-4">
+            <FaYoutube className="text-white hover:text-gray-300 transition-all duration-300 cursor-pointer" size={28} />
+            <FaInstagram className="text-white hover:text-gray-300 transition-all duration-300 cursor-pointer" size={28} />
+            <FaTwitter className="text-white hover:text-gray-300 transition-all duration-300 cursor-pointer" size={28} />
           </div>
           
-          <div className='text-sm text-white flex flex-col md:flex-row md:order-1 md:mt-0 mt-4'>
-            <ul className='flex gap-4'>
-              <li>Contact</li>
-              <li>Privacy and Policy</li>
-              <li>Terms of Service</li>
-              <li>
-                <span className='flex items-center'>
-                  <FaRegCopyright className='mr-1' />
-                  Timbu Shop
-                </span>
-              </li>
-            </ul>
+          {/* Links */}
+          <div className="text-sm text-white flex flex-wrap justify-center md:justify-start gap-4">
+            <span className="cursor-pointer hover:text-gray-300 transition-all duration-300">Contact</span>
+            <span className="cursor-pointer hover:text-gray-300 transition-all duration-300">Privacy Policy</span>
+            <span className="cursor-pointer hover:text-gray-300 transition-all duration-300">Terms of Service</span>
+          </div>
+
+          {/* Copyright */}
+          <div className="text-sm text-white flex items-center cursor-pointer">
+            <FaRegCopyright className="mr-1" /> Timbu Shop
           </div>
         </div>
       </div>
